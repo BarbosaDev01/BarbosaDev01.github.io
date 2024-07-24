@@ -1,0 +1,152 @@
+/*RESETAR CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/*CSS VARIÁVEIS*/
+:root {
+
+    --bg-color: #ffcbff;
+    --second-bg-color: #ffffff;
+    --big-font: 2.5rem;
+    --normal-font: 2rem;
+    --neon-box-shadow: 0 0 1rem rgb(175, 175, 175);
+
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+span {
+    color: var(--hover-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--second-bg-color);
+    height: 80px;
+    padding: 0 8%;
+    box-shadow: var(--neon-box-shadow);
+    color: #ffcbff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+.logo {
+    font-size: 1.4rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.bx-menu {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 820px) {
+    nav {
+        padding-inline: 5%;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--bg-color);
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    nav ul li:first-child {
+        padding-top: 10px;
+    }
+
+    nav ul li:last-child {
+        padding-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+}
+
+main {
+    color: #ffffff;
+    padding: 2px;
+}
+
+main h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 250px;
+    display: flex;
+}
+
+#contato img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#contato a {
+    background: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a {
+    color: #ffcbff;
+    background-color: #ffffff;
+    
+}
+
+main h2 {
+    text-align: center;
+}
